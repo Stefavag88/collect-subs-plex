@@ -38,11 +38,6 @@ Plex will now correctly detect and match them.
 
 ---
 
-## Requirements
-- Python 3.7 or higher
-
----
-
 ## Usage
 
 1. Place the script inside the folder that contains your `Subs/` directory.  
@@ -56,6 +51,11 @@ By default, it works on the current directory (./).
 
 You can also specify another target folder:
 python collect_subs.py /path/to/media
+
+## Requirements
+- Python 3.7 or higher
+
+---
 
 ## Examples
 
