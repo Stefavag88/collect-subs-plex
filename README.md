@@ -3,6 +3,7 @@
 This script automates collecting and renaming subtitles for Plex.  
 It expects a structure like this:
 
+```text
 /YourMediaFolder
 ├─ Subs/
 │ ├─ Episode1/
@@ -11,16 +12,17 @@ It expects a structure like this:
 │ ├─ Episode2/
 │ │ └─ whatever.srt
 │ └─ ...
+```
 
 
 After running, the subtitles are moved into the media folder itself:
-
+```text
 /YourMediaFolder
 ├─ Episode1.en.srt
 ├─ Episode1.el.forced.srt
 ├─ Episode2.srt
 └─ ...
-
+```
 
 Plex will now correctly detect and match them.
 
@@ -58,21 +60,21 @@ python collect_subs.py /path/to/media
 ## Examples
 
 Input:
-
+```text
 Subs/
   Ep1/
     track1.eng.srt
     track2.greek.forced.srt
   Ep2/
     something.srt
-
+```
 
 Output:
-
+```text
 Ep1.en.srt
 Ep1.el.forced.srt
 Ep2.srt
-
+```
 ## Notes
 
 If the script can’t detect a language from the filename, it will just produce EpisodeName.srt.
